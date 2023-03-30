@@ -1,0 +1,7 @@
+/home/nyan/practicas/Ayed/Practica04-Ayed/build/CMakeFiles/edit_cache.dir
+/home/nyan/practicas/Ayed/Practica04-Ayed/build/CMakeFiles/rebuild_cache.dir
+/home/nyan/practicas/Ayed/Practica04-Ayed/build/Practica4/CMakeFiles/edit_cache.dir
+/home/nyan/practicas/Ayed/Practica04-Ayed/build/Practica4/CMakeFiles/rebuild_cache.dir
+/home/nyan/practicas/Ayed/Practica04-Ayed/build/Practica4/src/CMakeFiles/nods.dir
+/home/nyan/practicas/Ayed/Practica04-Ayed/build/Practica4/src/CMakeFiles/edit_cache.dir
+/home/nyan/practicas/Ayed/Practica04-Ayed/build/Practica4/src/CMakeFiles/rebuild_cache.dir

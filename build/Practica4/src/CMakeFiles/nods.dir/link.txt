@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/nods.dir/main.cc.o -o ../../bin/nods 
