@@ -1,11 +1,11 @@
-// AUTOR: 
-// FECHA: 
-// EMAIL: 
-// VERSION: 3.0
+// AUTOR: José Ángel Portillo García
+// FECHA: 07/04/2023
+// EMAIL: alu0101568232@ull.edu.es
+// VERSION: 2.0
 // ASIGNATURA: Algoritmos y Estructuras de Datos
 // PRÁCTICA Nº: 4
 // ESTILO: Google C++ Style Guide
-// COMENTARIOS: 
+// COMENTARIOS:
 
 #ifndef SLLT_H_
 #define SLLT_H_

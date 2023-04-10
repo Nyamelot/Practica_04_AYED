@@ -1,12 +1,11 @@
-// AUTOR: 
-// FECHA: 
-// EMAIL: 
+// AUTOR: José Ángel Portillo García
+// FECHA: 07/04/2023
+// EMAIL: alu0101568232@ull.edu.es
 // VERSION: 2.0
 // ASIGNATURA: Algoritmos y Estructuras de Datos
 // PRÁCTICA Nº: 4
 // ESTILO: Google C++ Style Guide
 // COMENTARIOS:
-// 
 
 #ifndef SLLPOLYNOMIAL_H_
 #define SLLPOLYNOMIAL_H_
@@ -50,10 +49,15 @@ bool IsNotZero(const double val, const double eps = EPS) {
 // FASE II
 // constructor
 SllPolynomial::SllPolynomial(const vector_t<double>& v, const double eps) {
-  // poner el código aquí
-  
+  sll_t polinomio;
+  for (int i = 0; i < v.get_size(); i++) {
+    if ((fabs(v.at(i)) > eps)) {
+      pair_double_t data(v.at(i), i);
+      auto* nudo = new SllPolyNode(data);
+      polinomio.push_front(nudo);
+    }
+  }
 }
-
 
 // E/S
 void SllPolynomial::Write(std::ostream& os) const {

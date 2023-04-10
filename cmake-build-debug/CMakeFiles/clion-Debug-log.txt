@@ -1,4 +1,4 @@
-/home/nyan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/nyan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.174/bin/ninja/linux/x64/ninja -G Ninja -S /home/nyan/practicas/Ayed/Practica04-Ayed -B /home/nyan/practicas/Ayed/Practica04-Ayed/cmake-build-debug
+/home/nyan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/nyan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/ninja/linux/x64/ninja -G Ninja -S /home/nyan/practicas/Ayed/Practica04-Ayed -B /home/nyan/practicas/Ayed/Practica04-Ayed/cmake-build-debug
 -- The CXX compiler identification is GNU 12.2.1
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done

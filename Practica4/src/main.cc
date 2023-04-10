@@ -1,11 +1,11 @@
-// AUTOR: 
-// FECHA: 
-// EMAIL: 
-// VERSION: 1.0
+// AUTOR: José Ángel Portillo García
+// FECHA: 07/04/2023
+// EMAIL: alu0101568232@ull.edu.es
+// VERSION: 2.0
 // ASIGNATURA: Algoritmos y Estructuras de Datos
 // PRÁCTICA Nº: 4
 // ESTILO: Google C++ Style Guide
-// COMENTARIOS: 
+// COMENTARIOS:
 // COMPILACIÓN: g++ -g main_sllpolynomial.cc -o main_sllpolynomial
 // EJECUCIÓN: ./main_sllpolynomial < data_sllpolynomial.txt
 

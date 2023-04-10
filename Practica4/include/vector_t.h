@@ -1,12 +1,11 @@
-// AUTOR: 
-// FECHA: 
-// EMAIL: 
-// VERSION: 3.1
+// AUTOR: José Ángel Portillo García
+// FECHA: 07/04/2023
+// EMAIL: alu0101568232@ull.edu.es
+// VERSION: 2.0
 // ASIGNATURA: Algoritmos y Estructuras de Datos
 // PRÁCTICA Nº: 4
 // ESTILO: Google C++ Style Guide
 // COMENTARIOS:
-// 
 
 #ifndef VECTORT_H_
 #define VECTORT_H_
