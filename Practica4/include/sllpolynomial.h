@@ -121,52 +121,58 @@ bool SllPolynomial::IsEqual(const SllPolynomial& sllpol,
 void SllPolynomial::Sum(const SllPolynomial& sllpol,
 			SllPolynomial& sllpolsum,
 			const double eps) {
-  SllPolyNode* aux1 = get_head();
-  SllPolyNode* aux2 = sllpol.get_head();
+  SllPolyNode *aux1 = get_head();
+  SllPolyNode *aux2 = sllpol.get_head();
+  SllPolynomial aux_sum_poly;
   while (aux1 != NULL && aux2 != NULL) {
-    if (aux1 ->get_data().get_inx() == aux2 -> get_data().get_inx()) {
-      pair_double_t data (aux1 -> get_data().get_val() + aux2 -> get_data().get_val(), aux1->get_data().get_inx());
-      SllPolyNode* nodo = new SllPolyNode(data);
-      nodo -> set_data(data);
+    if (aux1->get_data().get_inx() == aux2->get_data().get_inx()) {
+      pair_double_t data(aux1->get_data().get_val() + aux2->get_data().get_val(), aux1->get_data().get_inx());
+      SllPolyNode *nodo = new SllPolyNode(data);
+      nodo->set_data(data);
       if (fabs(data.get_val()) > eps) {
-        sllpolsum.push_front(nodo);
+        aux_sum_poly.push_front(nodo);
       }
-      aux1 = aux1 -> get_next();
-      aux2 = aux2 -> get_next();
-    } else if (aux1 -> get_data().get_inx() < aux2 -> get_data().get_inx()) {
-      pair_double_t data (aux1 -> get_data().get_val(), aux1->get_data().get_inx());
-      SllPolyNode* nodo = new SllPolyNode(data);
-      nodo -> set_data(data);
-      sllpolsum.push_front(nodo);
-      aux1 = aux1 -> get_next();
+      aux1 = aux1->get_next();
+      aux2 = aux2->get_next();
+    } else if (aux1->get_data().get_inx() < aux2->get_data().get_inx()) {
+      pair_double_t data(aux1->get_data().get_val(), aux1->get_data().get_inx());
+      SllPolyNode *nodo = new SllPolyNode(data);
+      nodo->set_data(data);
+      aux_sum_poly.push_front(nodo);
+      aux1 = aux1->get_next();
     } else {
-      pair_double_t data (aux2 -> get_data().get_val(), aux2->get_data().get_inx());
-      SllPolyNode* nodo = new SllPolyNode(data);
-      nodo -> set_data(data);
-      sllpolsum.push_front(nodo);
-      aux2 = aux2 -> get_next();
+      pair_double_t data(aux2->get_data().get_val(), aux2->get_data().get_inx());
+      SllPolyNode *nodo = new SllPolyNode(data);
+      nodo->set_data(data);
+      aux_sum_poly.push_front(nodo);
+      aux2 = aux2->get_next();
     }
     if (aux1 == NULL && aux2 != NULL) {
       while (aux2 != NULL) {
-        pair_double_t data (aux2 -> get_data().get_val(), aux2->get_data().get_inx());
-        SllPolyNode* nodo = new SllPolyNode(data);
-        nodo -> set_data(data);
-        sllpolsum.push_front(nodo);
-        aux2 = aux2 -> get_next();
+        pair_double_t data(aux2->get_data().get_val(), aux2->get_data().get_inx());
+        SllPolyNode *nodo = new SllPolyNode(data);
+        nodo->set_data(data);
+        aux_sum_poly.push_front(nodo);
+        aux2 = aux2->get_next();
       }
     } else if (aux2 == NULL && aux1 != NULL) {
       while (aux1 != NULL) {
-        pair_double_t data (aux1 -> get_data().get_val(), aux1->get_data().get_inx());
-        SllPolyNode* nodo = new SllPolyNode(data);
-        nodo -> set_data(data);
-        sllpolsum.push_front(nodo);
-        aux1 = aux1 -> get_next();
+        pair_double_t data(aux1->get_data().get_val(), aux1->get_data().get_inx());
+        SllPolyNode *nodo = new SllPolyNode(data);
+        nodo->set_data(data);
+        aux_sum_poly.push_front(nodo);
+        aux1 = aux1->get_next();
       }
     }
   }
-
-
+  SllPolyNode *aux3 = aux_sum_poly.get_head();
+  while (aux3 != NULL) {
+    pair_double_t data(aux3 -> get_data().get_val(), aux3 -> get_data().get_inx());
+    SllPolyNode *nodo = new SllPolyNode(data);
+    aux3 ->set_data(data);
+    sllpolsum.push_front(nodo);
+    aux3 = aux3->get_next();
+  }
 }
-
 
 #endif  // SLLPOLYNOMIAL_H_
