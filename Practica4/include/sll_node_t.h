@@ -16,7 +16,8 @@
 template <class T> class sll_node_t {
  public:
   // constructores
-  sll_node_t(void) : data_(), next_(NULL) {}  // constructor por defecto
+  sll_node_t(void) : data_(), next_(NULL) {}  // constructor por defecto, existe en el caso de que se cree
+                                              // un objeto al que no se le haya inicializado un valor
   sll_node_t(const T& data) : data_(data), next_(NULL) {} // constructor
 
   // destructor

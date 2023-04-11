@@ -72,5 +72,10 @@ int main()
   sllp2.Sum(sllp3, sllpsum23);
   cout << "sllp2 + sllp3= " << sllpsum23;
 
+  // Modificacion
+  SllPolynomial sllpsust13;
+  sllp1.Sust(sllp3, sllpsust13);
+  cout << "sllp1 - sllp3= " << sllpsust13;
+
   return 0;
 }
